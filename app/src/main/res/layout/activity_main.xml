@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hold And Record"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/recordButton"
+        android:id="@+id/holdAndPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap and hold button to record"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Button"
+        android:layout_below="@id/holdAndPlay"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/enterYourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playButton"
+        android:layout_marginTop="22dp"
+        android:hint="Enter your username and remember it"/>
+
+    <EditText
+        android:id="@+id/enterAudioTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterYourName"
+        android:layout_marginTop="22dp"
+        android:hint="Enter the title of the audio"/>
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterAudioTitle"
+        android:layout_marginTop="20dp"
+        android:text="Upload" />
+
+    <Button
+        android:id="@+id/firebasePlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadButton"
+        android:layout_marginTop="45dp"
+        android:text="Play from firebase" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
